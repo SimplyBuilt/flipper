@@ -29,7 +29,7 @@ impl Flipper {
 
 impl Handler<HttpStream> for Flipper {
     fn on_request(&mut self, request: Request<HttpStream>) -> Next {
-        info!("{} {}", request.method(), request.uri());
+        debug!("{} {}", request.method(), request.uri());
 
         match request.headers().get::<Host>() {
             Some(host) => {
@@ -65,7 +65,7 @@ impl Handler<HttpStream> for Flipper {
     fn on_response(&mut self, response: &mut Response) -> Next {
         match self.route {
             Route::DomainFlip(ref host) => {
-                debug!("Domain Flip on_response");
+                debug!("DomainFlip on_response for {}", host);
 
                 response.set_status(StatusCode::PermanentRedirect);
                 response.headers_mut().set(Location(host.to_owned()));
@@ -74,7 +74,7 @@ impl Handler<HttpStream> for Flipper {
             }
 
             Route::NotFound => {
-                debug!("Route Not Found on_response");
+                debug!("NotFound on_response");
 
                 response.set_status(StatusCode::NotFound);
                 response.headers_mut().set(ContentLength(NOT_FOUND.len() as u64));
