@@ -31,9 +31,9 @@ $ flipper --help
 flipper - HTTP domain name flipper, powered by hyper.
 
 Usage:
-  esper [--bind=<bind>] [--port=<port>] [--threads=<st>]
-  esper (-h | --help)
-  esper --version
+  flipper [--bind=<bind>] [--port=<port>] [--threads=<st>]
+  flipper (-h | --help)
+  flipper --version
 
 Options:
   -h --help          Show this screen.
