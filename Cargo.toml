@@ -1,0 +1,12 @@
+[package]
+name = "flipper"
+version = "0.1.0"
+authors = ["Michael Coyne <mikeycgto@gmail.com>", "SimplyBuilt <info@simplybuilt.com>"]
+
+[dependencies]
+hyper = { git = "https://github.com/hyperium/hyper.git" }
+docopt = { version = "0.6" }
+docopt_macros = { version = "0.6" }
+rustc-serialize = { version = "0.3" }
+log = { version = "0.3" }
+env_logger = { version = "0.3" }
