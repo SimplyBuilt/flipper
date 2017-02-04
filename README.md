@@ -1,4 +1,4 @@
-## esper
+## flipper :dolphin:
 
 flipper flips root domains to www subdomains!
 
@@ -40,5 +40,4 @@ Options:
   --version          Show version.
   -b --bind=<bind>   Bind to specific IP [default: 127.0.0.1]
   -p --port=<port>   Run on a specific port number [default: 3000]
-  -t --threads=<st>  Number of server threads [default: 2].
 ```
