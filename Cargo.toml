@@ -1,10 +1,11 @@
 [package]
 name = "flipper"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Michael Coyne <mikeycgto@gmail.com>", "SimplyBuilt <info@simplybuilt.com>"]
 
 [dependencies]
 hyper = { git = "https://github.com/hyperium/hyper.git" }
+futures = { version = "0.1.7" }
 docopt = { version = "0.6" }
 docopt_macros = { version = "0.6" }
 rustc-serialize = { version = "0.3" }
