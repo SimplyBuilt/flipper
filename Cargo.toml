@@ -4,7 +4,7 @@ version = "0.2.0"
 authors = ["Michael Coyne <mikeycgto@gmail.com>", "SimplyBuilt <info@simplybuilt.com>"]
 
 [dependencies]
-hyper = { git = "https://github.com/hyperium/hyper.git" }
+hyper = { git = "https://github.com/hyperium/hyper.git", rev = "c42f18db05e47fc24e8a8ece76cbc782b7558e8b" }
 futures = { version = "0.1.7" }
 docopt = { version = "0.6" }
 docopt_macros = { version = "0.6" }

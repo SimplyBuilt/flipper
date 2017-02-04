@@ -36,7 +36,7 @@ impl Service for Flipper {
     type Future = ::futures::Finished<Response, hyper::Error>;
 
     fn call(&self, request: Request) -> Self::Future {
-        debug!("{} {}", request.method(), request.uri());
+        info!("{} {}", request.method(), request.uri());
 
         ::futures::finished(match request.headers().get::<Host>() {
             Some(host) => {
